@@ -30,18 +30,9 @@ namespace N_Puzzle_Game
         private void button1_Click(object sender, EventArgs e)
         {
             lbl_time.Text = "";
-            if (radioButton1.Checked)
-            {
-                panel1.Controls.Clear();
-                usdg = new UserControl_Puzzle_Numbers(270, 3, 90);
-                panel1.Controls.Add(usdg);
-            }
-            else if (radioButton2.Checked && path != "")
-            {
-                panel1.Controls.Clear();
-                uspc = new UserControl_Puzzle_Pictures(path, 270, 3, 90);
-                panel1.Controls.Add(uspc);
-            }
+            panel1.Controls.Clear();
+            usdg = new UserControl_Puzzle_Numbers(270, 3, 90);
+            panel1.Controls.Add(usdg);
         }
 
         private void Eight_Puzzle_Load(object sender, EventArgs e)
@@ -50,8 +41,6 @@ namespace N_Puzzle_Game
             t = new Timer();
             t.Interval = 5;
             //t.Tick += new EventHandler(t_click);
-            radioButton1.Checked = true;
-            radioButton2.Checked = false;
         }
 
 	
@@ -91,7 +80,7 @@ namespace N_Puzzle_Game
             string s = "";
             int start = DateTime.Now.Minute * 60 * 1000 +
                 DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
-            if (usdg != null && radioButton1.Checked)
+           
             {
                 state = get_state(usdg.state);
 
@@ -103,18 +92,7 @@ namespace N_Puzzle_Game
                     s = "A*";
                 }
             }
-            else if (uspc != null && uspc.state.Length == 9 && radioButton2.Checked)
-            {
-                state = get_state(uspc.state);
-                if (b_a_star && !uspc.is_goal())
-                {
-                    uspc.obj_astar = new a_star(3);
-                    uspc.obj_astar.set_goal(uspc.obj_astar.get_destination());
-                    uspc.obj_astar.solve(state);  uspc.start();
-                    s = "A*";
-                }
-
-            }
+            
             int end = DateTime.Now.Minute * 60 * 1000 +
                 DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
             lbl_time.Text = "time required is : " + (end - start).ToString()
@@ -136,15 +114,7 @@ namespace N_Puzzle_Game
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenFileDialog choose = new OpenFileDialog();
-            choose.Filter = 
-                "Image Files (JPEG, GIF, PNG , JPG) |*.jpeg; *.gif; *.png; *.jpg";
-
-            if (choose.ShowDialog() == DialogResult.OK)
-            {
-                pictureBox1.Image = Image.FromFile(choose.FileName);
-                path = choose.FileName;
-            }
+            
         }
 
         private void Eight_Puzzle_FormClosed(object sender, FormClosedEventArgs e)

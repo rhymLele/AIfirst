@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Model\a_star.cs" />
     <Compile Include="Model\bidirectional.cs" />
+    <Compile Include="Model\test_push.cs" />
     <Compile Include="View\Eight_Puzzle.cs">
       <SubType>Form</SubType>
     </Compile>
