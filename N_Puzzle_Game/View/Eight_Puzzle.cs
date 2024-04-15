@@ -16,7 +16,6 @@ namespace N_Puzzle_Game
         Timer t;
       
         UserControl_Puzzle_Numbers usdg;
-        UserControl_Puzzle_Pictures uspc;
        
         public bool  b_a_star = false;
 

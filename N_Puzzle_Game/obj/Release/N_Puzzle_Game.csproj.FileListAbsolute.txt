@@ -50,3 +50,17 @@ D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.Generate
 D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.CoreCompileInputs.cache
 D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.exe
 D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.pdb
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\bin\Release\N_Puzzle_Game.exe.config
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\bin\Release\N_Puzzle_Game.exe
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\bin\Release\N_Puzzle_Game.pdb
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.AssemblyReference.cache
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Eight_Puzzle.resources
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Fifteen_Puzzle.resources
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Properties.Resources.resources
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Start_Window.resources
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.UserControl_Puzzle_Numbers.resources
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.UserControl_Need.resources
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.GenerateResource.cache
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.CoreCompileInputs.cache
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.exe
+D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.pdb

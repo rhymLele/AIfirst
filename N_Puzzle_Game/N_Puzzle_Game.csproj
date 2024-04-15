@@ -82,12 +82,6 @@
     <Compile Include="Controller\UserControl_Puzzle_Numbers.Designer.cs">
       <DependentUpon>UserControl_Puzzle_Numbers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controller\UserControl_Puzzle_Pictures.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controller\UserControl_Puzzle_Pictures.Designer.cs">
-      <DependentUpon>UserControl_Puzzle_Pictures.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="View\Eight_Puzzle.resx">
       <DependentUpon>Eight_Puzzle.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,9 +103,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controller\UserControl_Puzzle_Numbers.resx">
       <DependentUpon>UserControl_Puzzle_Numbers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controller\UserControl_Puzzle_Pictures.resx">
-      <DependentUpon>UserControl_Puzzle_Pictures.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controller\UserControl_Need.resx">
       <DependentUpon>UserControl_Need.cs</DependentUpon>
