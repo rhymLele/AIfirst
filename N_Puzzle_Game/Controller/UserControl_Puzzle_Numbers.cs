@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 
+
 namespace N_Puzzle_Game
 {
     public partial class UserControl_Puzzle_Numbers : UserControl_Need
@@ -18,6 +19,7 @@ namespace N_Puzzle_Game
 		private int moveCount = 0;
 		private Stopwatch stopwatch;
 		private TimeSpan elapsedTime;
+
 		private void IncrementMoveCount()
 		{
 			moveCount++;
@@ -104,7 +106,7 @@ namespace N_Puzzle_Game
                     }
                     Button btn = create_button(j * btn_length, i * btn_length, btn_length);
                     int font_size = N == 3 ? 48 : 32;
-                    btn.Font = new System.Drawing.Font("Consolas", font_size, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    btn.Font = new System.Drawing.Font("Mistral", font_size, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     btn.Text = (state[i * N + j] - 48).ToString();
                     btn.Click += new System.EventHandler(this.click);
                     this.Controls.Add(btn);
@@ -114,7 +116,7 @@ namespace N_Puzzle_Game
         {
 			if (!stopwatch.IsRunning)
 			{
-				stopwatch.Start();
+				stopwatch.Start(); 
 			}
 			Button btn = (Button)sender;
             int btn_x = btn.Location.X, btn_y = btn.Location.Y;

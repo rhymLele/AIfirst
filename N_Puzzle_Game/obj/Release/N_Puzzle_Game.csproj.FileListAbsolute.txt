@@ -44,7 +44,6 @@ D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Fifteen_Puzzle.
 D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Properties.Resources.resources
 D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Start_Window.resources
 D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.UserControl_Puzzle_Numbers.resources
-D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.UserControl_Puzzle_Pictures.resources
 D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.UserControl_Need.resources
 D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.GenerateResource.cache
 D:\Codes\AI\game\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.CoreCompileInputs.cache

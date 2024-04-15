@@ -45,7 +45,7 @@
             "3 * 3",
             "4 * 4"});
 			this.cmbx_size.Location = new System.Drawing.Point(319, 19);
-			this.cmbx_size.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cmbx_size.Margin = new System.Windows.Forms.Padding(4);
 			this.cmbx_size.Name = "cmbx_size";
 			this.cmbx_size.Size = new System.Drawing.Size(319, 40);
 			this.cmbx_size.TabIndex = 0;
@@ -68,7 +68,7 @@
 			// 
 			this.button1.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button1.Location = new System.Drawing.Point(98, 244);
-			this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.button1.Margin = new System.Windows.Forms.Padding(4);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(199, 48);
 			this.button1.TabIndex = 4;
@@ -80,7 +80,7 @@
 			// 
 			this.button2.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button2.Location = new System.Drawing.Point(409, 244);
-			this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.button2.Margin = new System.Windows.Forms.Padding(4);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(199, 48);
 			this.button2.TabIndex = 5;
@@ -91,6 +91,7 @@
 			// comboBox2
 			// 
 			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox2.Enabled = false;
 			this.comboBox2.Font = new System.Drawing.Font("Consolas", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.comboBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
 			this.comboBox2.FormattingEnabled = true;
@@ -114,7 +115,7 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.cmbx_size);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.Name = "Start_Window";
 			this.Opacity = 0.98D;

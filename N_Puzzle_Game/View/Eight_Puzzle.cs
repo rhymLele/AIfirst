@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,20 +17,32 @@ namespace N_Puzzle_Game
         Timer t;
       
         UserControl_Puzzle_Numbers usdg;
-       
-        public bool  b_a_star = false;
+		private int startTime;
+		private Timer timer;
+		public bool  b_a_star = false;
 
-        public Eight_Puzzle()
+		public Eight_Puzzle()
         {
-            InitializeComponent();
-            lbl_time.Text = "";
-            lbl_time.ForeColor = Color.OrangeRed;
+			InitializeComponent();
+			lbl_time.Text = "time : 00:00:00";
+			timer = new Timer();
+			timer.Interval = 1000; // 1 giây
+			timer.Tick += t_Tick;
+			lbl_time.ForeColor = Color.OrangeRed;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            lbl_time.Text = "";
-            panel1.Controls.Clear();
+		private void t_Tick(object sender, EventArgs e)
+		{
+			TimeSpan timeSpan = TimeSpan.FromMilliseconds(Environment.TickCount - startTime);
+			lbl_time.Text = "Time: " + timeSpan.ToString(@"hh\:mm\:ss");
+		}
+
+		private void button1_Click(object sender, EventArgs e) {
+
+			startTime = Environment.TickCount;
+			lbl_time.Text = "time : 00:00:00";
+			//timer.Start();      
+			panel1.Controls.Clear();
             usdg = new UserControl_Puzzle_Numbers(270, 3, 90);
             panel1.Controls.Add(usdg);
         }
@@ -64,13 +77,12 @@ namespace N_Puzzle_Game
 
 		private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            
-            t.Start();
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            t.Start();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -125,5 +137,9 @@ namespace N_Puzzle_Game
           
         }
 
-    }
+		private void button2_Click_1(object sender, EventArgs e)
+		{
+            this.Close();
+		}
+	}
 }

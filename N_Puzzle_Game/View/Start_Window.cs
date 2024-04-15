@@ -46,8 +46,15 @@ namespace N_Puzzle_Game
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+			if (MessageBox.Show("Do you want to exit the program?", "Warning",
+			  MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
+			  DialogResult.Yes)
+				this.Close();
+            else
+            {
+
+            }
+		}
 
         private void button1_Click(object sender, EventArgs e)
         {
