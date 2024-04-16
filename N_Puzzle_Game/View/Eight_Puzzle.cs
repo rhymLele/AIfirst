@@ -18,7 +18,7 @@ namespace N_Puzzle_Game
       
         UserControl_Puzzle_Numbers usdg;
 		private int startTime;
-		private Timer timer;
+		public Timer timer;
 		public bool  b_a_star = false;
 
 		public Eight_Puzzle()
@@ -28,7 +28,7 @@ namespace N_Puzzle_Game
 			timer = new Timer();
 			timer.Interval = 1000; // 1 giây
 			timer.Tick += t_Tick;
-			lbl_time.ForeColor = Color.OrangeRed;
+			lbl_time.ForeColor = Color.Black;
         }
 
 		private void t_Tick(object sender, EventArgs e)
@@ -41,39 +41,18 @@ namespace N_Puzzle_Game
 
 			startTime = Environment.TickCount;
 			lbl_time.Text = "time : 00:00:00";
-			//timer.Start();      
+			timer.Start();      
 			panel1.Controls.Clear();
-            usdg = new UserControl_Puzzle_Numbers(270, 3, 90);
+            usdg = new UserControl_Puzzle_Numbers(270, 3, 90, 0);
             panel1.Controls.Add(usdg);
         }
 
         private void Eight_Puzzle_Load(object sender, EventArgs e)
         {
-            //this.Width = 310;
             t = new Timer();
             t.Interval = 5;
-            //t.Tick += new EventHandler(t_click);
         }
 
-	
-
-		//private void t_click(object sender, eventargs e)
-		//{
-		//    if (radiobutton2.checked)
-		//    {
-		//        int x = this.width + 1;
-		//        if (x <= 624)
-		//            this.width = x;
-		//        else t.stop();
-		//    }
-		//    else if (radiobutton1.checked)
-		//    {
-		//        int x = this.width - 1;
-		//        if (x >= 310)
-		//            this.width = x;
-		//        else t.stop();
-		//    }
-		//}
 
 		private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -87,6 +66,7 @@ namespace N_Puzzle_Game
 
         private void button3_Click(object sender, EventArgs e)
         {
+            timer.Stop();
             int[,] state;
             string s = "";
             int start = DateTime.Now.Minute * 60 * 1000 +

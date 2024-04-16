@@ -19,6 +19,8 @@ namespace N_Puzzle_Game
 		private int moveCount = 0;
 		private Stopwatch stopwatch;
 		private TimeSpan elapsedTime;
+		private int isEightPuzzle, getPuzzle = -1;
+
 
 		private void IncrementMoveCount()
 		{
@@ -34,8 +36,8 @@ namespace N_Puzzle_Game
 		{
 			moveCount = 0;
 		}
-		public UserControl_Puzzle_Numbers(int s, int n, int l)
-        {
+		public UserControl_Puzzle_Numbers(int s, int n, int l, int isEightPuzzle)
+		{
             InitializeComponent();
             set(s, n, l);
 			stopwatch = new Stopwatch();
@@ -50,6 +52,8 @@ namespace N_Puzzle_Game
             t = new Timer();
             t.Interval = 200;
             t.Tick += new EventHandler(start_solution);
+            this.getPuzzle = isEightPuzzle;
+            
         }
 
         private void set(int s, int n, int l)
@@ -157,6 +161,17 @@ namespace N_Puzzle_Game
                 int idx = (btn.Location.X / btn_length) + (btn.Location.Y / btn_length) * N;
                 if (ans[idx] != int.Parse(btn.Text) + 48) return false;
             }
+            switch (getPuzzle)
+            {
+                case 0:
+					((Eight_Puzzle)this.ParentForm).timer.Stop();
+                    break;
+                case 1:
+					((Fifteen_Puzzle)this.ParentForm).timer.Stop();
+                    break;
+                default: return false;
+			}
+			
 			StopTimer();
 			MessageBox.Show("You finished! Total moves: " + moveCount.ToString() + " ,\nTotal time: " + GetElapsedTime() + "!");
 			return true;

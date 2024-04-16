@@ -15,26 +15,39 @@ namespace N_Puzzle_Game
 
         string path = "";
         Timer t;
-        UserControl_Puzzle_Numbers usdg;
+		public Timer timer;
+		private int startTime;
+		UserControl_Puzzle_Numbers usdg;
         public bool  b_a_star = false;
 
         public Fifteen_Puzzle() 
         {
             InitializeComponent();
-            lbl_time.Text = "";
-            lbl_time.ForeColor = Color.OrangeRed;
+			lbl_time.Text = "time : 00:00:00";
+			timer = new Timer();
+			timer.Interval = 1000; // 1 giây
+			timer.Tick += t_Tick;
+			lbl_time.ForeColor = Color.Black;
         }
+		private void t_Tick(object sender, EventArgs e)
+		{
+			TimeSpan timeSpan = TimeSpan.FromMilliseconds(Environment.TickCount - startTime);
+			lbl_time.Text = "Time: " + timeSpan.ToString(@"hh\:mm\:ss");
+		}
 
-        private void button1_Click(object sender, EventArgs e)
+		private void button1_Click(object sender, EventArgs e)
         {
-            lbl_time.Text = "";
-            panel1.Controls.Clear();
-            usdg = new UserControl_Puzzle_Numbers(280, 4, 70);
+			startTime = Environment.TickCount;
+			lbl_time.Text = "time : 00:00:00";
+			timer.Start();
+			panel1.Controls.Clear();
+            usdg = new UserControl_Puzzle_Numbers(280, 4, 70, 1);
             panel1.Controls.Add(usdg);
         }
 
         private void button3_Click(object sender, EventArgs e) 
         {
+            timer.Stop();
             int[,] state;
             string s = "";
             int start = DateTime.Now.Minute * 60 * 1000 +
@@ -71,8 +84,8 @@ namespace N_Puzzle_Game
 
         private void button2_Click(object sender, EventArgs e) 
         {
-            
-        }
+			this.Close();
+		}
 
         private void Fifteen_Puzzle_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -82,32 +95,19 @@ namespace N_Puzzle_Game
             }
         }
 
-        private void t_click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Fifteen_Puzzle_Load(object sender, EventArgs e)
         {
             t = new Timer();
             t.Interval = 5;
-            t.Tick += new EventHandler(t_click);
-
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            t.Start();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            t.Start();
         }
 
-		private void button2_Click_1(object sender, EventArgs e)
-		{
-            this.Close();
-		}
 	}
 }
