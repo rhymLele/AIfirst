@@ -34,6 +34,7 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.button2 = new System.Windows.Forms.Button();
+			this.lbl_move = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// lbl_time
@@ -90,11 +91,22 @@
 			this.button2.UseVisualStyleBackColor = true;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
+			// lbl_move
+			// 
+			this.lbl_move.AutoSize = true;
+			this.lbl_move.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold);
+			this.lbl_move.Location = new System.Drawing.Point(242, 397);
+			this.lbl_move.Name = "lbl_move";
+			this.lbl_move.Size = new System.Drawing.Size(77, 27);
+			this.lbl_move.TabIndex = 24;
+			this.lbl_move.Text = "Move:";
+			// 
 			// Fifteen_Puzzle
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(542, 527);
+			this.Controls.Add(this.lbl_move);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.lbl_time);
 			this.Controls.Add(this.button3);
@@ -122,5 +134,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Label lbl_move;
 	}
 }

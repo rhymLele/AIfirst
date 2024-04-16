@@ -23,7 +23,7 @@ namespace N_Puzzle_Game
         public Fifteen_Puzzle() 
         {
             InitializeComponent();
-			lbl_time.Text = "time : 00:00:00";
+			lbl_time.Text = "Time : 00:00:00";
 			timer = new Timer();
 			timer.Interval = 1000; // 1 giây
 			timer.Tick += t_Tick;
@@ -34,7 +34,10 @@ namespace N_Puzzle_Game
 			TimeSpan timeSpan = TimeSpan.FromMilliseconds(Environment.TickCount - startTime);
 			lbl_time.Text = "Time: " + timeSpan.ToString(@"hh\:mm\:ss");
 		}
-
+		public void UpdateMoveCountLabel()
+		{
+			lbl_move.Text = "Move: " + usdg.GetMoveCount().ToString();
+		}
 		private void button1_Click(object sender, EventArgs e)
         {
 			startTime = Environment.TickCount;
@@ -47,6 +50,7 @@ namespace N_Puzzle_Game
         private void button3_Click(object sender, EventArgs e) 
         {
             timer.Stop();
+            lbl_move.Hide();
             int[,] state;
             string s = "";
             int start = DateTime.Now.Minute * 60 * 1000 +

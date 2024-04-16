@@ -24,12 +24,16 @@ namespace N_Puzzle_Game
 		public Eight_Puzzle()
         {
 			InitializeComponent();
-			lbl_time.Text = "time : 00:00:00";
+			lbl_time.Text = "Time : 00:00:00";
 			timer = new Timer();
 			timer.Interval = 1000; // 1 giây
 			timer.Tick += t_Tick;
 			lbl_time.ForeColor = Color.Black;
         }
+		public void UpdateMoveCountLabel()
+		{
+			lbl_move.Text = "Move: " + usdg.GetMoveCount().ToString();
+		}
 
 		private void t_Tick(object sender, EventArgs e)
 		{
@@ -52,20 +56,10 @@ namespace N_Puzzle_Game
             t.Interval = 5;
         }
 
-
-		private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             timer.Stop();
+            lbl_move.Hide();
             int[,] state;
             string s = "";
             int start = DateTime.Now.Minute * 60 * 1000 +
@@ -104,8 +98,8 @@ namespace N_Puzzle_Game
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-        }
+			this.Close();
+		}
 
         private void Eight_Puzzle_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -116,9 +110,5 @@ namespace N_Puzzle_Game
           
         }
 
-		private void button2_Click_1(object sender, EventArgs e)
-		{
-            this.Close();
-		}
 	}
 }

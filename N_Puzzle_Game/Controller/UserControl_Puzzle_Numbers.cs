@@ -19,12 +19,19 @@ namespace N_Puzzle_Game
 		private int moveCount = 0;
 		private Stopwatch stopwatch;
 		private TimeSpan elapsedTime;
-		private int isEightPuzzle, getPuzzle = -1;
-
+        private int isEightPuzzle, getPuzzle = -1;
 
 		private void IncrementMoveCount()
 		{
 			moveCount++;
+            if(getPuzzle == 0)
+            {
+                ((Eight_Puzzle)this.ParentForm).UpdateMoveCountLabel();
+            }
+            else if(getPuzzle == 1)
+            {
+				((Fifteen_Puzzle)this.ParentForm).UpdateMoveCountLabel();
+			}
 		}
 
 		public int GetMoveCount()
