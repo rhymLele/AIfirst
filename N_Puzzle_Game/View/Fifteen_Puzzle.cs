@@ -42,6 +42,7 @@ namespace N_Puzzle_Game
         {
 			startTime = Environment.TickCount;
 			timer.Start();
+			usdg.ResetMoveCount();
 			panel1.Controls.Clear();
             usdg = new UserControl_Puzzle_Numbers(280, 4, 70, 1);
             panel1.Controls.Add(usdg);
