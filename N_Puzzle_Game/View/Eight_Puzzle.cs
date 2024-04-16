@@ -40,7 +40,6 @@ namespace N_Puzzle_Game
 		private void button1_Click(object sender, EventArgs e) {
 
 			startTime = Environment.TickCount;
-			lbl_time.Text = "time : 00:00:00";
 			timer.Start();      
 			panel1.Controls.Clear();
             usdg = new UserControl_Puzzle_Numbers(270, 3, 90, 0);
