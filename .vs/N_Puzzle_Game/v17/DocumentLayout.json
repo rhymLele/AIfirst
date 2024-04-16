@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Android\\AIfirst\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93A52C6E-DE3C-4F1C-BB04-C039D9B3AC97}|N_Puzzle_Game\\N_Puzzle_Game.csproj|D:\\Android\\AIfirst\\n_puzzle_game\\controller\\usercontrol_puzzle_numbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A52C6E-DE3C-4F1C-BB04-C039D9B3AC97}|N_Puzzle_Game\\N_Puzzle_Game.csproj|solutionrelative:n_puzzle_game\\controller\\usercontrol_puzzle_numbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A52C6E-DE3C-4F1C-BB04-C039D9B3AC97}|N_Puzzle_Game\\N_Puzzle_Game.csproj|d:\\android\\aifirst\\n_puzzle_game\\view\\eight_puzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A52C6E-DE3C-4F1C-BB04-C039D9B3AC97}|N_Puzzle_Game\\N_Puzzle_Game.csproj|solutionrelative:n_puzzle_game\\view\\eight_puzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A52C6E-DE3C-4F1C-BB04-C039D9B3AC97}|N_Puzzle_Game\\N_Puzzle_Game.csproj|D:\\Android\\AIfirst\\n_puzzle_game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A52C6E-DE3C-4F1C-BB04-C039D9B3AC97}|N_Puzzle_Game\\N_Puzzle_Game.csproj|solutionrelative:n_puzzle_game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93A52C6E-DE3C-4F1C-BB04-C039D9B3AC97}|N_Puzzle_Game\\N_Puzzle_Game.csproj|D:\\Android\\AIfirst\\n_puzzle_game\\model\\bidirectional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93A52C6E-DE3C-4F1C-BB04-C039D9B3AC97}|N_Puzzle_Game\\N_Puzzle_Game.csproj|solutionrelative:n_puzzle_game\\model\\bidirectional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserControl_Puzzle_Numbers.cs",
+              "DocumentMoniker": "D:\\Android\\AIfirst\\N_Puzzle_Game\\Controller\\UserControl_Puzzle_Numbers.cs",
+              "RelativeDocumentMoniker": "N_Puzzle_Game\\Controller\\UserControl_Puzzle_Numbers.cs",
+              "ToolTip": "D:\\Android\\AIfirst\\N_Puzzle_Game\\Controller\\UserControl_Puzzle_Numbers.cs",
+              "RelativeToolTip": "N_Puzzle_Game\\Controller\\UserControl_Puzzle_Numbers.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAIwLcAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T02:12:41.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Eight_Puzzle.cs",
+              "DocumentMoniker": "D:\\Android\\AIfirst\\N_Puzzle_Game\\View\\Eight_Puzzle.cs",
+              "RelativeDocumentMoniker": "N_Puzzle_Game\\View\\Eight_Puzzle.cs",
+              "ToolTip": "D:\\Android\\AIfirst\\N_Puzzle_Game\\View\\Eight_Puzzle.cs",
+              "RelativeToolTip": "N_Puzzle_Game\\View\\Eight_Puzzle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T02:12:41.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "bidirectional.cs",
+              "DocumentMoniker": "D:\\Android\\AIfirst\\N_Puzzle_Game\\Model\\bidirectional.cs",
+              "RelativeDocumentMoniker": "N_Puzzle_Game\\Model\\bidirectional.cs",
+              "ToolTip": "D:\\Android\\AIfirst\\N_Puzzle_Game\\Model\\bidirectional.cs",
+              "RelativeToolTip": "N_Puzzle_Game\\Model\\bidirectional.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAACsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T02:12:41.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Android\\AIfirst\\N_Puzzle_Game\\Program.cs",
+              "RelativeDocumentMoniker": "N_Puzzle_Game\\Program.cs",
+              "ToolTip": "D:\\Android\\AIfirst\\N_Puzzle_Game\\Program.cs",
+              "RelativeToolTip": "N_Puzzle_Game\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T02:12:41.65Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

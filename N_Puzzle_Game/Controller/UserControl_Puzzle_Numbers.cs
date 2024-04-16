@@ -180,7 +180,8 @@ namespace N_Puzzle_Game
 			}
 			
 			StopTimer();
-			MessageBox.Show("You finished! Total moves: " + moveCount.ToString() + " ,\nTotal time: " + GetElapsedTime() + "!");
+            string elapsedTime = GetElapsedTime();
+            MessageBox.Show("You finished! Total moves: " + moveCount.ToString() + " ,\nTotal time: " + elapsedTime + "!");
 			return true;
         }
     }

@@ -63,3 +63,17 @@ D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.Genera
 D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.CoreCompileInputs.cache
 D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.exe
 D:\adorb\Junior\AI\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.pdb
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.AssemblyReference.cache
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Eight_Puzzle.resources
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Fifteen_Puzzle.resources
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Properties.Resources.resources
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.Start_Window.resources
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.UserControl_Puzzle_Numbers.resources
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.UserControl_Need.resources
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.GenerateResource.cache
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.csproj.CoreCompileInputs.cache
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.exe
+D:\Android\AIfirst\N_Puzzle_Game\obj\Release\N_Puzzle_Game.pdb
+D:\Android\AIfirst\N_Puzzle_Game\bin\Release\N_Puzzle_Game.exe.config
+D:\Android\AIfirst\N_Puzzle_Game\bin\Release\N_Puzzle_Game.exe
+D:\Android\AIfirst\N_Puzzle_Game\bin\Release\N_Puzzle_Game.pdb
